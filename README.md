@@ -1,14 +1,12 @@
 <h1 align="center">
  🔎 Buscador-Acadêmico 🎓
 </h1>
-
-<img src="public/buscador.png" alt="Buscador-Acadêmico" style="zoom:80%;" />
-
 <div align="center">
+  <img src="public/buscador.png" alt="Buscador-Acadêmico" style="height:400px;" />
+</div>
 
-**🎓 AcademicAI** é um projeto em andamento que visa aplicar técnicas de inteligência artificial para recuperar e organizar dados da produção intelectual e científica nacional.
+**🎓 AcademicAI** é um projeto em andamento que visa aplicar técnicas de inteligência artificial para recuperar e organizar dados da produção intelectual e científica nacional. Neste repositório, disponibilizamos o código fonte referente ao nosso _buscador_, o qual foi criado utilizando o [Create React App](https://github.com/facebook/create-react-app).
 
-Neste repositório, disponibilizamos o código fonte referente ao nosso _buscador_, o qual foi criado utilizando o [Create React App](https://github.com/facebook/create-react-app).
 
 ## :hammer_and_wrench:Como executar o projeto
 
@@ -16,7 +14,7 @@ Neste repositório, disponibilizamos o código fonte referente ao nosso _buscado
 
 ### Executando localmente
 
-Para desenvolver o site site localmente, precisamos executar o servidor de desenvolvimento:
+Para desenvolver a aplicação localmente, precisamos executar o servidor de desenvolvimento:
 
 ```bash
 # Faça clone deste repositório
@@ -31,4 +29,7 @@ yarn start
 
 ## :information_source: ​Informações
 
-Essa extensão utiliza as informação de Qualis-Periódicos extraída via _webscraping_ da [Plataforma Sucupira](sucupira.capes.gov.br/) e vários conjuntos de dados do [Portal de Dados Abertos da CAPES](dadosabertos.capes.gov.br/) .
+- As informações sobre Qualis-Periódicos foram obtidas da [Plataforma Sucupira](sucupira.capes.gov.br/) via _webscraping_.
+- Demais dados foram extraídos do [Portal de Dados Abertos da CAPES](dadosabertos.capes.gov.br/).
+- Esse buscador tentar fazer uma correspondência entre a pergunta e os dados para retornar os resultados mais similares.
+- O conteúdo dos dados não é gerado artificialmente e nem pelos autores, o texto poderá ser truncado se for por muito extenso para questão de visualização.
