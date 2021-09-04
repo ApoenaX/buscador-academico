@@ -1,0 +1,27 @@
+/* Buscador */
+header {
+	padding: 20px;
+	border-bottom: 1px solid #c7c7c7;
+	height: var(--header-height);
+}
+
+input[type='text'] {
+	color: #3c4043;
+	padding: 7px;
+	font-size: 16px;
+	border: 2px solid #3c4043;
+	float: left;
+	width: 80%;
+	outline: none;
+}
+
+header button {
+	width: 20%;
+	padding: 7px;
+	border: 2px solid #3c4043;
+	background: #3c4043;
+	color: white;
+	font-size: 16px;
+	border-left: none;
+	cursor: pointer;
+}

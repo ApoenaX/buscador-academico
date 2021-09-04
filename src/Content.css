@@ -1,0 +1,103 @@
+main {
+	padding: 10px;
+	overflow: auto;
+	height: calc(100% - (var(--footer-height) + var(--header-height)));
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+main > small {
+	margin-top: 10px;
+	color: #666;
+	font-size: 14px;
+}
+
+main::-webkit-scrollbar {
+	width: 5px;
+}
+
+main::-webkit-scrollbar-track {
+	background: #ddd;
+}
+
+main::-webkit-scrollbar-thumb {
+	background: #666;
+}
+
+/* Mensagem inicial */
+
+.welcome {
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: justify;
+	background: #e7e9eb;
+}
+.welcome > .description {
+	padding-bottom: 10px;
+}
+
+.welcome > .examples {
+	margin-left: 20px;
+}
+
+/* Resultados */
+.results {
+	height: 95%;
+	width: 100%;
+}
+
+.item {
+	padding: 20px 0;
+}
+
+.item:not(:last-child) {
+	border-bottom: 2px dashed lightgrey;
+}
+
+/* 
+Animação consulta
+
+https://martinwolf.org/before-2018/blog/2015/01/pure-css-savingloading-dots-animation/
+
+*/
+
+.loading {
+	font-size: 30px;
+}
+@keyframes blink {
+	0% {
+		opacity: 0.2;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+.loading span {
+	font-size: 40px;
+	animation-name: blink;
+	animation-duration: 1.4s;
+	animation-iteration-count: infinite;
+	/**
+     * This makes sure that the starting style (opacity: .2)
+     * of the animation is applied before the animation starts.
+     * Otherwise we would see a short flash or would have
+     * to set the default styling of the dots to the same
+     * as the animation. Same applies for the ending styles.
+     */
+	animation-fill-mode: both;
+}
+
+.loading span:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.loading span:nth-child(3) {
+	animation-delay: 0.4s;
+}

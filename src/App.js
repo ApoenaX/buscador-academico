@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import { Content } from './Content'
+import { SearchContainer } from './SearchContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const [isLoading, setIsLoading] = useState(false)
+	const [results, setResults] = useState([])
+	const [displayWelcome, setDisplayWelcome] = useState(true)
+
+	return (
+		<div className='App'>
+			<SearchContainer
+				setResults={setResults}
+				setDisplayWelcome={setDisplayWelcome}
+				setIsLoading={setIsLoading}
+			/>
+			<Content
+				displayWelcome={displayWelcome}
+				results={results}
+				isLoading={isLoading}
+			/>
+			<footer>
+				<p>
+					* Os dados utilizados foram extraídos do portal de Dados
+					Abertos da Capes e da Plataforma Sucupira.
+				</p>
+				<p>
+					Criado por
+					<a
+						href='https://www.google.com'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						AcademicAI
+					</a>
+				</p>
+			</footer>
+		</div>
+	)
 }
 
-export default App;
+export default App

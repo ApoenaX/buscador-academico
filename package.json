@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "miragejs": "^0.1.41"
   }
 }
