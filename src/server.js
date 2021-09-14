@@ -27,6 +27,9 @@ export function makeServer({ environment = 'development' } = {}) {
 					]
 					return categories[Math.floor(Math.random() * 5)]
 				},
+				link() {
+					return faker.internet.url()
+				},
 			}),
 		},
 

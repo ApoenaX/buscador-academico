@@ -28,8 +28,8 @@ yarn start
 
 ## :information_source: ​Informações
 
--   As informações sobre Qualis-Periódicos foram obtidas da [Plataforma Sucupira](sucupira.capes.gov.br/) via _webscraping_.
--   Demais dados foram extraídos do [Portal de Dados Abertos da CAPES](dadosabertos.capes.gov.br/).
+-   As informações sobre Qualis-Periódicos foram obtidas da [Plataforma Sucupira](https://sucupira.capes.gov.br/sucupira/) via _webscraping_.
+-   Demais dados foram extraídos do [Portal de Dados Abertos da CAPES](https://dadosabertos.capes.gov.br/).
 -   Esse buscador tenta fazer uma correspondência entre a pergunta e os dados para retornar os resultados mais similares.
 -   O conteúdo dos dados não é gerado artificialmente e nem pelos autores.
 -   Algumas informações do resultado podem ser truncadas caso ultrapassem a quantidade máxima caracteres.

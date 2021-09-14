@@ -115,3 +115,20 @@ https://martinwolf.org/before-2018/blog/2015/01/pure-css-savingloading-dots-anim
 	width: 100%;
 	color: #a50e0e;
 }
+
+.content{
+	/* background-color:yellow; */
+	width:360px;
+	text-align: justify;
+	padding-bottom: 5px;
+	color: rgb(75, 75, 75);
+	
+	line-height: 1.5rem;
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	/* quantidade de linhas permitidas */
+	-webkit-line-clamp: 5; 
+}

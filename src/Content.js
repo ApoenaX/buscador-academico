@@ -41,14 +41,23 @@ const Results = ({ results }) => {
 			<>
 				<h1>{item.title}</h1>
 				{Object.entries(item).map(([key, value], subIndex) => {
-					if (key !== 'title')
+					if (key !== 'title' && key !== 'link')
 						return (
-							<p key={`subitem-${index}-${subIndex}`}>
+							<p
+								className='content'
+								key={`subitem-${index}-${subIndex}`}
+							>
 								<strong>{key}</strong>: <span>{value}</span>
 							</p>
 						)
 					return ''
 				})}
+				{item?.link && (
+					<a href={item.link} target='_blank' rel='noreferrer'>
+						<i className='fas fa-external-link-alt'></i> Mais
+						informações
+					</a>
+				)}
 			</>
 		)
 	}
