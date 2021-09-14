@@ -7,6 +7,7 @@ const App = () => {
 	const [isLoading, setIsLoading] = useState(false)
 	const [results, setResults] = useState([])
 	const [displayWelcome, setDisplayWelcome] = useState(true)
+	const [error, setError] = useState(null)
 
 	return (
 		<div className='App'>
@@ -14,11 +15,13 @@ const App = () => {
 				setResults={setResults}
 				setDisplayWelcome={setDisplayWelcome}
 				setIsLoading={setIsLoading}
+				setError={setError}
 			/>
 			<Content
 				displayWelcome={displayWelcome}
 				results={results}
 				isLoading={isLoading}
+				error={error}
 			/>
 			<footer>
 				<p>
@@ -28,7 +31,7 @@ const App = () => {
 				<p>
 					Criado por
 					<a
-						href='https://www.google.com'
+						href='https://www.academicai.vercel.app/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>

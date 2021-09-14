@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './SearchContainer.css'
 
+const API_URL = process.env.REACT_APP_API_URL
+
 export const SearchContainer = ({
 	setResults,
 	setDisplayWelcome,
 	setIsLoading,
+	setError,
 }) => {
 	const [value, setValue] = useState('')
 
@@ -18,10 +21,15 @@ export const SearchContainer = ({
 			setValue('')
 			setDisplayWelcome(false)
 			setIsLoading(true)
-			await fetch(`/api/search?q=${value}`)
+			await fetch(`${API_URL}/search/?q=${value}`)
 				.then((res) => res.json())
 				.then((json) => {
+					setError(null)
 					setResults(json.results)
+				})
+				.catch((error) => {
+					setError(error)
+					setResults([])
 				})
 			setIsLoading(false)
 		}

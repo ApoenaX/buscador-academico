@@ -7,7 +7,6 @@
 
 **🎓 AcademicAI** é um projeto em andamento que visa aplicar técnicas de inteligência artificial para recuperar e organizar dados da produção intelectual e científica nacional. Neste repositório, disponibilizamos o código fonte referente ao nosso _buscador_, o qual foi criado utilizando o [Create React App](https://github.com/facebook/create-react-app).
 
-
 ## :hammer_and_wrench:Como executar o projeto
 
 É necessário possuir o [Git](https://git-scm.com/) e [NodeJs](https://nodejs.org/en/) instalados para prosseguir com as etapas a seguir. Utilizamos o [Yarn](https://yarnpkg.com/) como o nosso gerenciador de pacotes do node.
@@ -29,7 +28,8 @@ yarn start
 
 ## :information_source: ​Informações
 
-- As informações sobre Qualis-Periódicos foram obtidas da [Plataforma Sucupira](sucupira.capes.gov.br/) via _webscraping_.
-- Demais dados foram extraídos do [Portal de Dados Abertos da CAPES](dadosabertos.capes.gov.br/).
-- Esse buscador tentar fazer uma correspondência entre a pergunta e os dados para retornar os resultados mais similares.
-- O conteúdo dos dados não é gerado artificialmente e nem pelos autores, o texto poderá ser truncado se for por muito extenso para questão de visualização.
+-   As informações sobre Qualis-Periódicos foram obtidas da [Plataforma Sucupira](sucupira.capes.gov.br/) via _webscraping_.
+-   Demais dados foram extraídos do [Portal de Dados Abertos da CAPES](dadosabertos.capes.gov.br/).
+-   Esse buscador tenta fazer uma correspondência entre a pergunta e os dados para retornar os resultados mais similares.
+-   O conteúdo dos dados não é gerado artificialmente e nem pelos autores.
+-   Algumas informações do resultado podem ser truncadas caso ultrapassem a quantidade máxima caracteres.

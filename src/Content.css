@@ -1,4 +1,5 @@
 main {
+	position: relative;
 	padding: 10px;
 	overflow: auto;
 	height: calc(100% - (var(--footer-height) + var(--header-height)));
@@ -100,4 +101,17 @@ https://martinwolf.org/before-2018/blog/2015/01/pure-css-savingloading-dots-anim
 
 .loading span:nth-child(3) {
 	animation-delay: 0.4s;
+}
+
+
+/* Mensagem de erro */
+
+.error{
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	font-size: small;
+	background: #fef6f5;
+	width: 100%;
+	color: #a50e0e;
 }

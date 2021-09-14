@@ -76,7 +76,21 @@ const Results = ({ results }) => {
 	)
 }
 
-export const Content = ({ displayWelcome, results, isLoading }) => {
+const Error = (error) => {
+	return (
+		<>
+			<p>
+				Ocorreu um erro ao se comunicar com o servidor, tente novamente
+				mais tarde. Se o erro persistir, contate os desenvolvedores.
+			</p>
+			<div className='error'>
+				<code>{String(error)}</code>
+			</div>
+		</>
+	)
+}
+
+export const Content = ({ displayWelcome, results, isLoading, error }) => {
 	return (
 		<main>
 			{displayWelcome ? (
@@ -87,6 +101,8 @@ export const Content = ({ displayWelcome, results, isLoading }) => {
 					<span>.</span>
 					<span>.</span>
 				</p>
+			) : error ? (
+				Error(error)
 			) : (
 				<>
 					{results.length > 0 && (
