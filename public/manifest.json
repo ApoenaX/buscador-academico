@@ -1,7 +1,7 @@
 {
 	"name": "Buscador Acadêmico",
 	"description": "Buscador semântico de conteúdo acadêmico brasileiro.",
-	"version": "0.0.0",
+	"version": "0.1.0-alpha",
 	"manifest_version": 2,
 	"homepage_url": "https://github.com/AcademicAI/buscador-academico",
 	"browser_action": {
@@ -9,9 +9,9 @@
 		"default_title": "Buscador Acadêmico"
 	},
 	"icons": {
-		"16": "logo.png",
-		"32": "logo.png",
-		"48": "logo.png",
-		"128": "logo.png"
+		"16": "logo16.png",
+		"32": "logo32.png",
+		"48": "logo48.png",
+		"128": "logo128.png"
 	}
 }
