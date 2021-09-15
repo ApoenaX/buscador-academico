@@ -29,9 +29,9 @@ const App = () => {
 					Abertos da Capes e da Plataforma Sucupira.
 				</p>
 				<p>
-					Criado por
+					Criado por{' '}
 					<a
-						href='https://www.academicai.vercel.app/'
+						href='https://academicai.vercel.app/'
 						target='_blank'
 						rel='noopener noreferrer'
 					>

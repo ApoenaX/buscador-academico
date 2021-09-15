@@ -118,8 +118,8 @@ export const Content = ({ displayWelcome, results, isLoading, error }) => {
 						<small>
 							{results.length}{' '}
 							{results.length > 1
-								? 'resultados econtrados'
-								: 'resultado econtrado'}
+								? 'resultados encontrados'
+								: 'resultado encontrado'}
 						</small>
 					)}
 					<Results results={results} />{' '}
