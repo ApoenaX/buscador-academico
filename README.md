@@ -8,7 +8,11 @@
 
 ## Sobre o Projeto
 
-🔎 Buscador-Acadêmico 🎓 - é uma ferramenta que permite consultar informações e processos sobre pós-graduações do Brasil que se encontram disponíveis na Plataforma Sucupira e no Portal de Dados Abertos da Capes.
+🔎 Buscador-Acadêmico 🎓 - é uma ferramenta que permite consultar informações e processos sobre pós-graduações do Brasil que se encontram disponíveis na Plataforma Sucupira e no Portal de Dados Abertos da Capes. Imagem da aplicação abaixo:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/8815320/147611552-d6800056-00a0-4dc7-96dd-008dddfacf7d.png" alt="Tela da aplicação" height=300/>
+</div>
 
 Acadêmicos, pesquisadores e interessados poderão realizar consultas sobre:
 
