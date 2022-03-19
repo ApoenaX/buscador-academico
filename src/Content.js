@@ -20,17 +20,16 @@ const welcome = (
 				>
 					Plataforma Sucupira
 				</a>
-				. Você pode fazer perguntas similares a essas:
+				. Escolha e pergunte sobre uma das categorias:
 			</p>
 		</div>
 
 		<ul className='examples'>
-			<li>Teses sobre Álgebra de Clifford</li>
-			<li>Periódicos de matemática</li>
-			<li>Qualis do periódico 1980-5799</li>
-			<li>Dissertações sobre Termodinâmica</li>
-			<li>Periódicos A1 em letras</li>
-			<li>Periódicos de redes de computadores</li>
+			<li>Teses e dissertações</li>
+			<li>Livros</li>
+			<li>Artigos em revista</li>
+			<li>Trabalho em Anais</li>
+			<li>Dentre várias outras informações</li>
 		</ul>
 	</section>
 )
